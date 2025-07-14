@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1062457719569",
+    "project_id": "windify-92f46",
+    "storage_bucket": "windify-92f46.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062457719569:android:534321c3e8693bfe7baab0",
+        "android_client_info": {
+          "package_name": "com.expensetracker.expense_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyVwgVDY6WYcstlJUB6VXX6T2wxjNbycQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
