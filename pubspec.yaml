@@ -45,10 +45,18 @@ dependencies:
   intl: ^0.18.1
   
   # Utils
-  permission_handler: any
-  sms_autofill: any
   shared_preferences: ^2.2.2
   uuid: ^4.2.2
+  
+  # Charts
+  fl_chart: ^0.66.1
+  
+  # Date Picker
+  table_calendar: ^3.0.9
+  
+  # PDF Export
+  pdf: ^3.10.7
+  printing: ^5.11.1
   
   # Icons
   cupertino_icons: ^1.0.5
@@ -77,10 +85,18 @@ flutter:
   uses-material-design: true
   
   # Enable Material 3
-  # To add assets to your application, add an assets section, like this:
+  # Assets for the application
   assets:
-    - assets/images/
-    - assets/icons/
+    - android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+    - android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+    - android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+    - android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+    - android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+    - android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png
+    - android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png
+    - android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png
+    - android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png
+    - android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

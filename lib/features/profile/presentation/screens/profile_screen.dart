@@ -6,6 +6,7 @@ import 'package:expense_tracker/shared/theme/app_theme.dart';
 import 'package:expense_tracker/shared/widgets/primary_button.dart';
 import 'package:expense_tracker/shared/widgets/empty_state.dart';
 import 'package:expense_tracker/features/auth/presentation/screens/login_screen.dart';
+import 'package:expense_tracker/features/profile/presentation/screens/settings_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -75,7 +76,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
           IconButton(
             icon: const Icon(Icons.settings_outlined),
             onPressed: () {
-              // Navigate to settings screen
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SettingsScreen(),
+                ),
+              );
             },
           ),
         ],

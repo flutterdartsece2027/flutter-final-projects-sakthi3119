@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:expense_tracker/shared/theme/app_theme.dart';
-import 'package:intl/intl.dart';
+import 'package:expense_tracker/core/utils/currency_formatter.dart';
 
 class BalanceCard extends StatelessWidget {
   final double balance;
@@ -18,10 +18,6 @@ class BalanceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final formatter = NumberFormat.currency(
-      symbol: '₹',
-      decimalDigits: 2,
-    );
 
     return GestureDetector(
       onTap: onTap,
@@ -59,7 +55,7 @@ class BalanceCard extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              formatter.format(balance.abs()),
+              CurrencyFormatter.format(balance.abs()),
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 32,
@@ -100,11 +96,6 @@ class BalanceCard extends StatelessWidget {
     required IconData icon,
     required Color color,
   }) {
-    final formatter = NumberFormat.currency(
-      symbol: '₹',
-      decimalDigits: 2,
-    );
-
     return Row(
       children: [
         Container(
@@ -128,7 +119,7 @@ class BalanceCard extends StatelessWidget {
             ),
             const SizedBox(height: 2),
             Text(
-              formatter.format(amount.abs()),
+              CurrencyFormatter.format(amount.abs()),
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 14,

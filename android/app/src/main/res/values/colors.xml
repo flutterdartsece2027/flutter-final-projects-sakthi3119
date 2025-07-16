@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Notification color -->
-    <color name="notification_icon_bg_color">#FF6200EE</color>
-    
-    <!-- Add other color resources here if needed -->
+    <color name="launch_background">#FFFFFF</color>
 </resources>
